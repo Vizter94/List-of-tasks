@@ -1,0 +1,9 @@
+.list{
+    list-style-type: none;
+}
+.list__items{
+    color:aqua;
+}
+.list__items--done{
+    color: red;
+}

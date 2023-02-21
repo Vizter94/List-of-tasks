@@ -1,0 +1,35 @@
+.form__container{
+    display:grid;
+    grid-template-rows: 1fr 5px 1fr;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    margin: 10px;
+    grid-gap:10px 10px;
+
+}
+
+.form__header{
+    margin: 10px;
+    
+       
+}
+.form__button{
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+.form__input{
+    
+    height: 38px;
+    padding: 10px;
+    margin: 0 20px;
+    
+}
+.form__newTask{
+    display:grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+    
+}
