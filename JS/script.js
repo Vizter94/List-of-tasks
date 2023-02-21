@@ -35,9 +35,9 @@
 
     for (const task of tasks) {
       htmlString += `<li class="list__items ${task.done ? "list__items--done" : ""}"> 
-      <button class="js-remove">Usuń</button>
-      <button class="js-done">Done</button>
-      ${task.element} </li>`;
+      <button class="js-done list__button"><img class="list__notdone" src="Images/notdone.png"></button>
+      ${task.element} 
+      <button class="js-remove list__button"><img class"list__delete" src="Images/delete.png"></button></li>`;
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
