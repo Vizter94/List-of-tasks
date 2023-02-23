@@ -10,6 +10,7 @@
     background-image: url(../Images/delete.png);
     width: 23px; 
     height: 23px;
+    
 }
 .list__button--notdone{
     border: none;   

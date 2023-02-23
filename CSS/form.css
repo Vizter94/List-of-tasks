@@ -1,6 +1,6 @@
 .form__container{
     display:grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     background-color: white;
     padding: 20px;
     align-items: center;
