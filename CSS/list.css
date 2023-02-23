@@ -1,33 +1,37 @@
-.list{
+.list {
     list-style-type: none;
-}
-.list__items{
-    display: flex;
-    align-items: center;
+    margin: 15px;
 }
 
-.list__items--done{
+.list__items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    border-bottom: 2px solid #d9d9d9;
+    ;
+}
+
+.list__items--done {
     text-decoration: line-through;
 }
-.list__button--delete{
-    border: none;   
+
+.list__button--delete {
+    border: none;
     background-image: url(../Images/delete.png);
-    width: 23px; 
+    width: 23px;
     height: 23px;
-    
-}
-.list__button--notdone{
-    border: none;   
-    background-image: url(../Images/notdone.png);
-    width: 23px; 
-    height: 23px;
-}
-.list__button--done{
-    border: none;   
-    background-image: url(../Images/done.png);
-    width: 23px; 
-    height: 23px;
-}
-.list__delete{
     margin-left: auto;
- }
+}
+
+.list__button--notdone {
+    border: none;
+    background-image: url(../Images/notdone.png);
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.list__button--done {
+    background-image: url(../Images/done.png);
+}

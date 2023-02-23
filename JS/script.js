@@ -29,15 +29,15 @@
     tasks[taskIndex].done = !tasks[taskIndex].done;
     render();
   }
- 
+
 
 
   const render = () => {
-    let htmlString = "";    
+    let htmlString = "";
 
     for (const task of tasks) {
-      htmlString += `<li class="list__items ${task.done ? "list__items--done" : ""}"> 
-      <button class="js-done list__button--notdone ${task.done ? "list__button--done" : ""}"></button>
+      htmlString += `<li class="list__items ${task.done && "list__items--done"}"> 
+      <button class="js-done list__button--notdone ${task.done && "list__button--done"}"></button>
       ${task.element} 
       <button class="js-remove list__button--delete"></button></li>`;
     }
@@ -56,10 +56,10 @@
     doneButtons.forEach((doneButton, index) => {
       doneButton.addEventListener("click", () => {
         doneTask(index);
-        
+
       });
     });
-   
+
   };
 
 

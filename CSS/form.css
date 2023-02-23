@@ -1,35 +1,34 @@
-.form__container{
-    display:grid;
+.form__container {
+    display: grid;
     grid-template-rows: 1fr auto;
     background-color: white;
-    padding: 20px;
     align-items: center;
-    margin: 10px;
-    grid-gap:10px 10px;
+    margin-bottom: 20px;
+    grid-gap: 10px 10px;
 
 }
 
-.form__header{
-    margin: 10px;
-    
-       
+.form__header {
+    padding: 20px;
+    border-bottom: 5px solid #d9d9d9;
+
 }
-.form__button{
+
+.form__button {
     background-color: teal;
     color: white;
     padding: 10px;
     margin: 20px;
 }
-.form__input{
-    
-    height: 38px;
+
+.form__input {
+    border: 1px solid #ccc;
     padding: 10px;
-    margin: 0 20px;
-    
 }
-.form__newTask{
-    display:grid;
+
+.form__newTask {
+    display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    
+    padding-left: 20px;
 }
