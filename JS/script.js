@@ -29,15 +29,23 @@
     tasks[taskIndex].done = !tasks[taskIndex].done;
     render();
   }
+ 
+const SetIcon = (doneButton) => {
+  doneButton.classList.contains("list__button--done") ? doneButton.classList.remove("list__button--done") : doneButton.classList.add("list__button--done");
+    
+    
+}
 
   const render = () => {
     let htmlString = "";
 
+    
+
     for (const task of tasks) {
       htmlString += `<li class="list__items ${task.done ? "list__items--done" : ""}"> 
-      <button class="js-done list__button"><img class="list__notdone" src="Images/notdone.png"></button>
+      <button class="js-done list__button--notdone"></button>
       ${task.element} 
-      <button class="js-remove list__button"><img class"list__delete" src="Images/delete.png"></button></li>`;
+      <button class="js-remove list__button--delete"></button></li>`;
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
@@ -54,8 +62,14 @@
     doneButtons.forEach((doneButton, index) => {
       doneButton.addEventListener("click", () => {
         doneTask(index);
+        SetIcon(doneButton);
       });
     });
+
+    
+   
+
+   
   };
 
 
@@ -64,6 +78,7 @@
     const formElement = document.querySelector(".js-form");
 
     formElement.addEventListener("submit", onSubmit);
+
   }
 
   init();
