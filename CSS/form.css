@@ -29,7 +29,7 @@
 }
 .form__newTask{
     display:grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
     
 }

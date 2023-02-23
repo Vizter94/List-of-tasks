@@ -1,6 +1,10 @@
 .list{
     list-style-type: none;
 }
+.list__items{
+    display: flex;
+    align-items: center;
+}
 
 .list__items--done{
     text-decoration: line-through;
@@ -25,5 +29,5 @@
     height: 23px;
 }
 .list__delete{
-    object-position: right;
-}
+    margin-left: auto;
+ }
