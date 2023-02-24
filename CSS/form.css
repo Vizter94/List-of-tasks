@@ -26,7 +26,13 @@
 @media (min-width: 767px) {
     .form__newTask {
         grid-template-columns: 1fr auto;
+   }
+}
+@media (max-width: 767px){
+    .form__newTask{
+        padding-right: 20px;
     }
+
 }
 
 .form__button {
