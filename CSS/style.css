@@ -15,3 +15,9 @@ html {
     margin: 100px;
     max-width: 2000px;
 }
+
+@media (max-width:767px) {
+    .body {
+        margin: 20px;
+    }
+}

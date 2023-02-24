@@ -12,20 +12,20 @@
     focusInput();
     pushTask(newTaskElement);
     clear();
-    
+
   }
 
- const focusInput = () =>{
-  document.getElementById("focusButton").addEventListener("click", () =>{
-    document.getElementById("textField").focus();
-  })
- }
+  const focusInput = () => {
+    document.getElementById("focusButton").addEventListener("click", () => {
+      document.getElementById("textField").focus();
+    })
+  }
 
   const pushTask = (newTaskElement) => {
     tasks.push({
       element: newTaskElement,
     });
-    
+
     render();
   };
 
@@ -41,7 +41,7 @@
 
   const clear = () => {
     const inputElement = document.querySelector(".js-newTask")
-    inputElement.value="";
+    inputElement.value = "";
 
     render();
   }

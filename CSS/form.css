@@ -5,7 +5,7 @@
     align-items: center;
     margin-bottom: 20px;
     max-width: 1800px;
-    
+
 }
 
 .form__header {
@@ -13,6 +13,20 @@
     padding-bottom: 20px;
     border-bottom: 5px solid #d9d9d9;
 
+}
+
+.form__newTask {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+@media (min-width: 767px) {
+    .form__newTask {
+        grid-template-columns: 1fr auto;
+    }
 }
 
 .form__button {
@@ -25,12 +39,4 @@
 .form__input {
     border: 1px solid #ccc;
     padding: 10px;
-}
-
-.form__newTask {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding-left: 20px;
-    
 }

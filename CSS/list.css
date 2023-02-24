@@ -2,19 +2,21 @@
     list-style-type: none;
     margin: 15px;
     padding-inline-start: 0px;
-      
+
 }
-.list__text{
+
+.list__text {
+    width: 80%;
     overflow-wrap: anywhere;
-    
+
 }
 
 .list__items {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid #d9d9d9;    
-    
+    border-bottom: 2px solid #d9d9d9;
+
 }
 
 .list__items--done {
@@ -27,6 +29,7 @@
     width: 23px;
     height: 23px;
     margin-left: auto;
+
 }
 
 .list__button--notdone {
@@ -34,7 +37,8 @@
     background-image: url(../Images/notdone.png);
     width: 23px;
     height: 23px;
-    margin-right: 10px;
+    margin-right: 15px;
+    padding-right: 17px;
 }
 
 .list__button--done {
