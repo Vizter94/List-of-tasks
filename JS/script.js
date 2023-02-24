@@ -9,14 +9,23 @@
     if (newTaskElement === "") {
       return;
     }
+    focusInput();
     pushTask(newTaskElement);
+    clear();
+    
   }
+
+ const focusInput = () =>{
+  document.getElementById("focusButton").addEventListener("click", () =>{
+    document.getElementById("textField").focus();
+  })
+ }
 
   const pushTask = (newTaskElement) => {
     tasks.push({
       element: newTaskElement,
     });
-
+    
     render();
   };
 
@@ -30,7 +39,12 @@
     render();
   }
 
+  const clear = () => {
+    const inputElement = document.querySelector(".js-newTask")
+    inputElement.value="";
 
+    render();
+  }
 
   const render = () => {
     let htmlString = "";
@@ -38,12 +52,15 @@
     for (const task of tasks) {
       htmlString += `<li class="list__items ${task.done && "list__items--done"}"> 
       <button class="js-done list__button--notdone ${task.done && "list__button--done"}"></button>
-      ${task.element} 
+      <p class="list__text">${task.element}</p> 
       <button class="js-remove list__button--delete"></button></li>`;
     }
+
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
     const removeButtons = document.querySelectorAll(".js-remove");
+
+
 
     removeButtons.forEach((removeButton, index) => {
       removeButton.addEventListener("click", () => {
