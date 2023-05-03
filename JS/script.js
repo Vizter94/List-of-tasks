@@ -46,7 +46,7 @@
     render();
   }
 
-  const render = () => {
+  const renderTasks = () => {
     let htmlString = "";
 
     for (const task of tasks) {
@@ -58,10 +58,14 @@
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
+    
+  };
+
+  const render = () => {
+   
+    renderTasks();
+
     const removeButtons = document.querySelectorAll(".js-remove");
-
-
-
     removeButtons.forEach((removeButton, index) => {
       removeButton.addEventListener("click", () => {
         removeTask(index);
