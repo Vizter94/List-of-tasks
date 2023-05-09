@@ -44,3 +44,7 @@
 .list__button--done {
     background-image: url(../Images/done.png);
 }
+
+.list__items--hidden {
+    display: none;
+}

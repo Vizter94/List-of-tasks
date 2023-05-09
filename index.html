@@ -14,6 +14,7 @@
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/form.css" rel="stylesheet">
     <link href="CSS/list.css" rel="stylesheet">
+    <link href="CSS/buttons.css" rel="stylesheet">
     <script defer src="JS/script.js"></script>
 </head>
 
@@ -22,13 +23,22 @@
     <form class="form js-form">
         <div class="form__container">
             <h2 class="form__header">Dodaj nowe zadanie</h2>
+            <div class="form__line"></div>
             <div class="form__newTask">
                 <input class="js-newTask form__input" id="textField" placeholder="Co jest do zrobienia?">
                 <button id="focusButton" class="form__button">Dodaj zadanie</button>
             </div>
+            
         </div>
         <div class="form__container">
-            <h2 class="form__header">Lista Zadań</h2>
+            <div class="form__secondHeader">
+                <h2 class="form__header">Lista Zadań</h2>
+                <div>
+                <button class="buttons__button js-hideDoneTasks">Ukryj ukończone</button>
+                <button class="buttons__button js-AllDoneTasks"> Ukończ wszystkie</button>
+            </div>
+            </div>
+            <div class="form__line"></div>
             <div class="form__tasks">
                 <ul class="js-tasks list"></ul>
             </div>

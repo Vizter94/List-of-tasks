@@ -10,9 +10,10 @@
 
 .form__header {
     padding-left: 20px;
-    padding-bottom: 20px;
+ 
+}
+.form__line{
     border-bottom: 5px solid #d9d9d9;
-
 }
 
 .form__newTask {
@@ -35,14 +36,35 @@
 
 }
 
+
 .form__button {
     background-color: teal;
     color: white;
     padding: 10px;
     margin: 20px;
 }
+.form__button:hover {
+    transform: scale(1.1);
+}
 
 .form__input {
     border: 1px solid #ccc;
     padding: 10px;
+}
+
+.form__secondHeader{
+    display: grid;
+    grid-template-rows:1fr auto auto;
+    align-items: center;
+}
+@media (min-width: 767px) {
+    .form__secondHeader {
+        grid-template-columns: 1fr auto auto;
+   }
+}
+@media (max-width: 767px){
+    .form__secondHeader{
+        padding-right: 20px;
+    }
+
 }

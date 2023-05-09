@@ -1,0 +1,16 @@
+.buttons__button{
+    border: none;
+    background-color: white;
+    color: teal;
+    font-weight: bold;
+
+   
+}
+
+.buttons__button:hover{
+    color: rgba(0, 128, 128, 0.555);
+}
+
+.buttons__button--hide{
+    display: none;
+}
