@@ -1,16 +1,25 @@
-.buttons__button{
+.buttons__button {
     border: none;
     background-color: white;
-    color: teal;
+    color: rgb(0, 172, 172);
     font-weight: bold;
-
-   
+    margin: 10px 0 10px 20px;
 }
 
-.buttons__button:hover{
+.buttons__container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.buttons__button:hover {
     color: rgba(0, 128, 128, 0.555);
 }
 
-.buttons__button--hide{
+.buttons__button:disabled {
+    color: grey;
+}
+
+.buttons__button--hide {
     display: none;
 }

@@ -32,6 +32,10 @@
 
 }
 
+.list__button--delete:hover {
+    transform: scale(1.1);
+}
+
 .list__button--notdone {
     border: none;
     background-image: url(../Images/notdone.png);
@@ -41,9 +45,14 @@
     padding-right: 17px;
 }
 
+.list__button--notdone:hover {
+    transform: scale(1.1);
+}
+
 .list__button--done {
     background-image: url(../Images/done.png);
 }
+
 
 .list__items--hidden {
     display: none;
